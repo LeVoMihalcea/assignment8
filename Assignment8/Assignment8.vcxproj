@@ -117,9 +117,11 @@
   <ItemGroup>
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Repository.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Human.h" />
+    <ClInclude Include="Repository.h" />
     <ClInclude Include="tests.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>

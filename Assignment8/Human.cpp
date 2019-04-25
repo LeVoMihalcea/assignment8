@@ -54,6 +54,20 @@ std::string Human::getPhoto()
 	return this->photo;
 }
 
+bool Human::operator==(Human otherHuman)
+{
+	return this->name == otherHuman.getName();
+}
+
+bool Human::operator=(Human otherHuman)
+{
+	this->name = otherHuman.getName();
+	this->job = otherHuman.getJob();
+	this->age = otherHuman.getAge();
+	this->photo = otherHuman.getPhoto();
+	return true;
+}
+
 std::istream & operator>>(std::istream & inputStream, Human & human)
 {
 	std::string lineRead;
