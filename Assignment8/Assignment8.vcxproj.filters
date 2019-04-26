@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\Repositories">
+      <UniqueIdentifier>{7132ae0b-ade9-4583-9dae-df4c6a96d517}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Repositories">
+      <UniqueIdentifier>{dbee14d1-fe35-4ecc-9a7f-7a350cd4c699}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,8 +27,11 @@
     <ClCompile Include="Human.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RepositoryTXT.cpp">
+      <Filter>Source Files\Repositories</Filter>
+    </ClCompile>
     <ClCompile Include="Repository.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Repositories</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -36,7 +45,10 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Repository.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="RepositoryTXT.h">
+      <Filter>Header Files\Repositories</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

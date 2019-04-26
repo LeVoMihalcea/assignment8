@@ -39,13 +39,13 @@ void testBasicRepository() {
 	repository->add(human2);
 
 
-	auto output = repository->getAll().size();
+	auto output = repository->getElements().size();
 	assert(output == 2);
 
 	repository->remove(human1);
 	repository->remove(human1);
 
-	output = repository->getAll().size();
+	output = repository->getElements().size();
 	assert(output == 1);
 
 	job = "random"; age = 20; photo = "random.jpg";
@@ -57,7 +57,7 @@ void testBasicRepository() {
 	repository->update(human4);
 
 	repository->reset();
-	assert(repository->getAll().size() == 0);
+	assert(repository->getElements().size() == 0);
 
 }
 

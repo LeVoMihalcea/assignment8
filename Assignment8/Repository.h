@@ -8,8 +8,9 @@ using namespace std;
 
 class Repository
 {
+	friend class RepositoryTXT;
 private:
-	vector<Human> data;
+	vector<Human>* data = new vector<Human>;
 
 public:
 	Repository() {};
@@ -17,8 +18,9 @@ public:
 	virtual bool add(Human toAdd);
 	virtual bool update(Human toUpdate);
 	virtual bool remove(Human toRemove);
-	virtual vector<Human> getAll();
+	virtual vector<Human> getElements();
 	virtual void reset();
-	virtual void save();
+	virtual bool save();
+	virtual bool load();
 };
 
