@@ -44,7 +44,7 @@ bool RepositoryTXT::load(string path)
 
 	Human human;
 	while (file >> human) {
-		this->add(human);
+		Repository::add(human);
 	}
 	file.close();
 	return true;
@@ -66,4 +66,9 @@ void RepositoryTXT::reset()
 {
 	delete this->data;
 	this->data = new vector<Human>;
+}
+
+void RepositoryTXT::setPath(string path)
+{
+	this->path = path;
 }

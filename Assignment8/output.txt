@@ -1,0 +1,6 @@
+razi,programator,20,razi.jpg
+cristi,manager,19,cristi.jpg
+tavi,preot,20,tavi.jpg
+stefan,istoric,19,stefan.jpg
+mircea,istoric,20,mircea.jpg
+leo,programator,19,leo.jpg

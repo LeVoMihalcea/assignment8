@@ -74,7 +74,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <SDLCheck>true</SDLCheck>
+      <SDLCheck>false</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
     </ClCompile>
   </ItemDefinitionGroup>
@@ -118,13 +118,23 @@
     <ClCompile Include="Human.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Repository.cpp" />
+    <ClCompile Include="RepositoryCSV.cpp" />
+    <ClCompile Include="RepositoryFake.cpp" />
+    <ClCompile Include="RepositoryHTML.cpp" />
     <ClCompile Include="RepositoryTXT.cpp" />
+    <ClCompile Include="Service.cpp" />
+    <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Human.h" />
     <ClInclude Include="Repository.h" />
+    <ClInclude Include="RepositoryCSV.h" />
+    <ClInclude Include="RepositoryFake.h" />
+    <ClInclude Include="RepositoryHTML.h" />
     <ClInclude Include="RepositoryTXT.h" />
+    <ClInclude Include="Service.h" />
     <ClInclude Include="tests.h" />
+    <ClInclude Include="UI.h" />
     <ClInclude Include="utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

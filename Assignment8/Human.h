@@ -27,6 +27,8 @@ public:
 	bool operator==(Human otherHuman);
 	bool operator=(Human otherHuman);
 
+	std::string toHtml();
+
 	friend std::istream& operator>>(std::istream& inputStream, Human& human);
 	friend std::ostream& operator<<(std::ostream& outputStream, Human& human);
 };

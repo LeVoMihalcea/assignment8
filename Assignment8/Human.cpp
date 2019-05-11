@@ -68,6 +68,13 @@ bool Human::operator=(Human otherHuman)
 	return true;
 }
 
+std::string Human::toHtml()
+{
+	string toReturn = "";
+	toReturn = "<tr>\n\t<td>" + this->getName() + "</td>\n\t\t<td>" + this->getJob() + "</td>\n\t\t<td>" + to_string(this->getAge()) + "</td>\n\t\t<td><img src=\"poza.jpg\" width=\"100px\"><br>" + this->getPhoto() + "</img></td>\n\t\</tr>";
+	return toReturn;
+}
+
 std::istream & operator>>(std::istream & inputStream, Human & human)
 {
 	std::string lineRead;

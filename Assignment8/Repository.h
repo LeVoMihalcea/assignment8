@@ -9,6 +9,7 @@ using namespace std;
 class Repository
 {
 	friend class RepositoryTXT;
+	friend class Service;
 private:
 	vector<Human>* data = new vector<Human>;
 

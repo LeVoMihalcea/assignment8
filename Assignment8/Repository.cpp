@@ -1,5 +1,6 @@
 #include "Repository.h"
-
+#include <iostream>
+using namespace std;
 bool Repository::add(Human toAdd)
 {
 	auto iterator = find(this->data->begin(), this->data->end(), toAdd);

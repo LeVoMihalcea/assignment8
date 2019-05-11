@@ -27,10 +27,25 @@
     <ClCompile Include="Human.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RepositoryTXT.cpp">
+    <ClCompile Include="Repository.cpp">
       <Filter>Source Files\Repositories</Filter>
     </ClCompile>
-    <ClCompile Include="Repository.cpp">
+    <ClCompile Include="RepositoryCSV.cpp">
+      <Filter>Source Files\Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="RepositoryHTML.cpp">
+      <Filter>Source Files\Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="Service.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RepositoryFake.cpp">
+      <Filter>Source Files\Repositories</Filter>
+    </ClCompile>
+    <ClCompile Include="RepositoryTXT.cpp">
       <Filter>Source Files\Repositories</Filter>
     </ClCompile>
   </ItemGroup>
@@ -45,6 +60,21 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Repository.h">
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="RepositoryCSV.h">
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="RepositoryHTML.h">
+      <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="Service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RepositoryFake.h">
       <Filter>Header Files\Repositories</Filter>
     </ClInclude>
     <ClInclude Include="RepositoryTXT.h">

@@ -5,9 +5,9 @@
 
 class RepositoryTXT : public Repository
 {
+	friend class Service;
 private:
 	string path;
-
 public:
 	RepositoryTXT(string path);
 	~RepositoryTXT();
@@ -18,5 +18,6 @@ public:
 	bool load(string path);
 	bool save();
 	void reset();
+	void setPath(string path);
 };
 
