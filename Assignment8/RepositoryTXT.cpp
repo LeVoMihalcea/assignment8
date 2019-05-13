@@ -72,3 +72,8 @@ void RepositoryTXT::setPath(string path)
 {
 	this->path = path;
 }
+
+string RepositoryTXT::getPath()
+{
+	return this->path;
+}

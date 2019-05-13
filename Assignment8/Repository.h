@@ -23,5 +23,6 @@ public:
 	virtual void reset();
 	virtual bool save();
 	virtual bool load();
+	virtual string getPath() { return NULL; }
 };
 

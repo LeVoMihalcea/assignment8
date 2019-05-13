@@ -48,6 +48,9 @@
     <ClCompile Include="RepositoryTXT.cpp">
       <Filter>Source Files\Repositories</Filter>
     </ClCompile>
+    <ClCompile Include="Validators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Human.h">
@@ -79,6 +82,15 @@
     </ClInclude>
     <ClInclude Include="RepositoryTXT.h">
       <Filter>Header Files\Repositories</Filter>
+    </ClInclude>
+    <ClInclude Include="isolationTest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Validators.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="exceptions.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

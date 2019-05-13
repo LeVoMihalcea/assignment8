@@ -31,3 +31,8 @@ bool RepositoryHTML::save()
 	file.close();
 	return true;
 }
+
+string RepositoryHTML::getPath()
+{
+	return this->path;
+}

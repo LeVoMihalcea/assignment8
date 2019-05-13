@@ -11,5 +11,6 @@ public:
 
 	bool save();
 	bool load();
+	string getPath();
 };
 

@@ -124,9 +124,12 @@
     <ClCompile Include="RepositoryTXT.cpp" />
     <ClCompile Include="Service.cpp" />
     <ClCompile Include="UI.cpp" />
+    <ClCompile Include="Validators.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="exceptions.h" />
     <ClInclude Include="Human.h" />
+    <ClInclude Include="isolationTest.h" />
     <ClInclude Include="Repository.h" />
     <ClInclude Include="RepositoryCSV.h" />
     <ClInclude Include="RepositoryFake.h" />
@@ -136,6 +139,7 @@
     <ClInclude Include="tests.h" />
     <ClInclude Include="UI.h" />
     <ClInclude Include="utils.h" />
+    <ClInclude Include="Validators.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,6 +1,8 @@
 #pragma once
 #include "Service.h"
 #include <iostream>
+#include "Validators.h"
+#include "exceptions.h"
 using namespace std;
 class UI
 {
@@ -20,12 +22,20 @@ public:
 				words.push_back(word);
 				word = strtok(NULL, ",");
 			}
-			auto output = this->service->interpretCommand(words);
-			if (output.size() > 0) {
-				for (auto i : output) {
-					cout << i;
+			try {
+				auto output = this->service->interpretCommand(words);
+				if (output.size() > 0) {
+					for (auto i : output) {
+						cout << i;
+					}
 				}
-			}	
+			}
+			catch (RepositoryError) {
+				cout << "element already existing\n";
+			}
+			catch (ValidationError) {
+				cout << "invalid parameters for a human\n";
+			}
 		}
 	}
 };

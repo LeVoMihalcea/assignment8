@@ -9,5 +9,6 @@ public:
 	~RepositoryHTML();
 	bool load(string path);
 	bool save();
+	string getPath();
 };
 

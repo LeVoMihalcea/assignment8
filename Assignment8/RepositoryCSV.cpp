@@ -23,3 +23,8 @@ bool RepositoryCSV::load()
 	RepositoryTXT::load(this->path);
 	return true;
 }
+
+string RepositoryCSV::getPath()
+{
+	return this->path;
+}

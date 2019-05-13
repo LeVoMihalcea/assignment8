@@ -1,13 +1,24 @@
 #include "Service.h"
 #include <iostream>
+#include <Windows.h>
+#include "exceptions.h"
+#include "exceptions.h"
 using namespace std;
-Service::Service(Repository * repo)
+Service::Service(Repository * repo, Validators* validators)
 {
 	this->repo = repo;
+	this->validators = validators;
 }
 
 Service::~Service()
 {
+	if (this->mylistRepo != NULL) {
+		string path = this->mylistRepo->getPath();
+		char command[512];
+		strcpy(command, path.c_str());
+		cout << command << endl;
+		system(command);
+	}
 }
 
 vector<Human> Service::interpretCommand(vector<string> words)
@@ -37,10 +48,13 @@ vector<Human> Service::interpretCommand(vector<string> words)
 	}
 	if (this->mode == 'A') {
 		if (words[0] == "add") {
+			if (words.size() < 5) throw ValidationError();
 			words[2].erase(words[2].begin());
 			words[4].erase(words[4].begin());
 			Human newHuman(words[1], words[2], stoi(words[3]), words[4]);
-			this->add(newHuman);
+			if(validators->validateHuman(newHuman))
+				this->add(newHuman);
+			else throw ValidationError();
 			return toReturn;
 		}
 		if (words[0] == "list") {
@@ -106,18 +120,15 @@ vector<Human> Service::interpretCommand(vector<string> words)
 
 bool Service::add(Human toAdd)
 {
-	this->repo->add(toAdd);
-	return true;
+	return this->repo->add(toAdd);
 }
 
 bool Service::remove(Human toRemove)
 {
-	this->repo->remove(toRemove);
-	return true;
+	return this->repo->remove(toRemove);
 }
 
 bool Service::update(Human toUpdate)
 {
-	this->repo->update(toUpdate);
-	return true;
+	return this->repo->update(toUpdate);
 }

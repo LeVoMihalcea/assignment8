@@ -1,5 +1,6 @@
 #include "Repository.h"
 #include <iostream>
+#include "exceptions.h"
 using namespace std;
 bool Repository::add(Human toAdd)
 {
@@ -8,6 +9,7 @@ bool Repository::add(Human toAdd)
 		this->data->push_back(toAdd);
 		return true;
 	}
+	throw RepositoryError();
 	return false;
 }
 

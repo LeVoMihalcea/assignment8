@@ -19,5 +19,6 @@ public:
 	bool save();
 	void reset();
 	void setPath(string path);
+	virtual string getPath();
 };
 
