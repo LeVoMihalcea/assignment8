@@ -125,6 +125,7 @@
     <ClCompile Include="Service.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="Validators.cpp" />
+    <ClCompile Include="ValidatorsFake.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="exceptions.h" />
@@ -140,6 +141,7 @@
     <ClInclude Include="UI.h" />
     <ClInclude Include="utils.h" />
     <ClInclude Include="Validators.h" />
+    <ClInclude Include="ValidatorsFake.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

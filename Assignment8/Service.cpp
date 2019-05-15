@@ -12,13 +12,11 @@ Service::Service(Repository * repo, Validators* validators)
 
 Service::~Service()
 {
-	if (this->mylistRepo != NULL) {
-		string path = this->mylistRepo->getPath();
-		char command[512];
-		strcpy(command, path.c_str());
-		cout << command << endl;
-		system(command);
-	}
+	string path = this->mylistRepo->getPath();
+	char command[512];
+	strcpy(command, path.c_str());
+	cout << command << endl;
+	system(command);
 }
 
 vector<Human> Service::interpretCommand(vector<string> words)
